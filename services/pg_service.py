@@ -1,9 +1,6 @@
-# services/pg_service.py
-
 import psycopg2
 from config import POSTGRES_URI
 
-# Connect to PostgreSQL
 def connect_to_postgres():
     conn = psycopg2.connect(POSTGRES_URI)
     return conn
