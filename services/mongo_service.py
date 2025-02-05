@@ -1,11 +1,8 @@
-# services/mongo_service.py
-
 from pymongo import MongoClient
 from config import MONGO_URI
 
-# Connect to MongoDB
 client = MongoClient(MONGO_URI)
-db = client['mydatabase']  # Replace with your MongoDB database name
+db = client['mydatabase']  
 
 def insert_data(collection_name, data):
     collection = db[collection_name]
